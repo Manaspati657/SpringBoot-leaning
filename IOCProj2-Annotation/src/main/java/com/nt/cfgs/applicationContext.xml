@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <!-- spring bean configuration -->
+
+    <!-- Dependent class cfg  -->
+    
+    <!-- 
+      if we take 2 spring bean  as dependent class then ambiguity problem arises 
+      for solve this problem 3 solution are there
+      1:  we can add primary="true" in one bean tag 
+      2:  we can take same id name with dependent key name
+      3:  we can use @Qualifier annotation with id name which one we have required (recommended)
+          for point 3 solution we have to add context:annotation-config tag that detects and activate 
+          multiple annotation related to BeanPostProcessor automatically during IOC container startup
+   
+   note : if we use 3 method at time then qualifier is chosen by ioc container
+     -->
+    <!-- <bean id="date" class="java.util.Date" /> -->
+      <bean id="dt" class="java.util.Date"  primary="true" />
+    <!-- <bean id="dt2" class="java.util.Date" primary="true" >  -->
+    <bean id="dt2" class="java.util.Date">
+       <property name="year" value="110" />
+     </bean>
+
+    <bean id="date" class="java.util.Date">
+       <property name="year" value="115" />
+     </bean>
+    <!-- target class cfg  -->
+    
+    <!--
+    without any scope type by default spring bean is singleton scope only create one object of class but if 
+    we take scope type "prototype" then every call of getBeans method a new object is created we can check it in 
+    main class with hashCode() method 
+    
+      -->
+    
+    <!--
+       ->if we are using @Component annotation in class level then no need to declare any 
+       bean tag for spring bean class
+       -> if we are not taking any id for a spring bean then automatically spring bean
+       take full specified class name as id of the spring bean 
+     -->
+    <!-- <bean id="wmg" class="com.nt.beans.WishMessageGenerator" scope="singleton" /> -->
+    
+    
+    
+    
+    <!-- AutowiredBeanPostProcesser cfg  -->
+    <!-- <bean  class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" /> -->
+    <context:component-scan base-package="com.nt.beans"/>
+</beans>

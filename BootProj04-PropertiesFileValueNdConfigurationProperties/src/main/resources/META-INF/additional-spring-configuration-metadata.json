@@ -1,0 +1,97 @@
+{"properties": [
+  {
+    "name": "hospital.name",
+    "type": "java.lang.String",
+    "description": "A description for 'hospital.name'"
+  },
+  {
+    "name": "hospital.age",
+    "type": "java.lang.String",
+    "description": "A description for 'hospital.age'"
+  },
+  {
+    "name": "cust.info.name",
+    "type": "java.lang.String",
+    "description": "A description for 'cust.info.name'"
+  },
+  {
+    "name": "cust.info.address",
+    "type": "java.lang.String",
+    "description": "A description for 'cust.info.address'"
+  },
+  {
+    "name": "cust.info.age",
+    "type": "java.lang.String",
+    "description": "A description for 'cust.info.age'"
+  },
+  {
+    "name": "cust.info.salary",
+    "type": "java.lang.String",
+    "description": "A description for 'cust.info.salary'"
+  },
+  {
+    "name": "lab.bpPrice",
+    "type": "java.lang.String",
+    "description": "A description for 'lab.bpPrice'"
+  },
+  {
+    "name": "lab.rtpcrPrice",
+    "type": "java.lang.String",
+    "description": "A description for 'lab.rtpcrPrice'"
+  },
+  {
+    "name": "lab.echo2DPrice",
+    "type": "java.lang.String",
+    "description": "A description for 'lab.echo2DPrice'"
+  },
+  {
+    "name": "per.info.pid",
+    "type": "java.lang.String",
+    "description": "A description for 'per.info.pid'"
+  },
+  {
+    "name": "per.info.pname",
+    "type": "java.lang.String",
+    "description": "A description for 'per.info.pname'"
+  },
+  {
+    "name": "lab.echo2DPrice",
+    "type": "java.lang.String",
+    "description": "A description for 'lab.echo2DPrice'"
+  },
+  {
+    "name": "lab.rtpcrPrice",
+    "type": "java.lang.String",
+    "description": "A description for 'lab.rtpcrPrice'"
+  },
+  {
+    "name": "per.info.favColors[0]",
+    "type": "java.lang.String",
+    "description": "A description for 'per.info.favColors[0]'"
+  },
+  {
+    "name": "per.info.favColors[0]",
+    "type": "java.lang.String",
+    "description": "A description for 'per.info.favColors[0]'"
+  },
+  {
+    "name": "per.info.studies[0]",
+    "type": "java.lang.String",
+    "description": "A description for 'per.info.studies[0]'"
+  },
+  {
+    "name": "per.info.phoneNumbers[0]",
+    "type": "java.lang.String",
+    "description": "A description for 'per.info.phoneNumbers[0]'"
+  },
+  {
+    "name": "per.info.idDetails.aadharNo",
+    "type": "java.lang.String",
+    "description": "A description for 'per.info.idDetails.aadharNo'"
+  },
+  {
+    "name": "per.info.jobInfo.desg",
+    "type": "java.lang.String",
+    "description": "A description for 'per.info.jobInfo.desg'"
+  }
+]}

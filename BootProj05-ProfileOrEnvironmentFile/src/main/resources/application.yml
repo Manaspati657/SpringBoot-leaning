@@ -1,0 +1,44 @@
+
+
+#we can declare all configruation file in one file yml 
+
+
+spring:
+  profiles:
+    active: uat,prod
+  
+---
+spring:
+  profiles: dev
+  datasource:
+     driver-class-name: com.mysql.cj.jdbc.Driver
+     password: ''
+     url: jdbc:mysql://localhost:3306/devdb
+     username: root
+     
+---
+spring:
+  profiles: test
+  datasource:
+   driver-class-name: com.mysql.cj.jdbc.Driver
+   url: jdbc:mysql://localhost:3306/devdb
+   username: root
+   password: ''
+   
+---
+spring:
+  profiles: uat
+  datasource:
+   driver-class-name: com.mysql.cj.jdbc.Driver
+   url: jdbc:mysql://localhost:3306/livedb
+   username: root
+   password: ''
+
+---
+spring:
+  profiles: prod
+  datasource:
+   driver-class-name: com.mysql.cj.jdbc.Driver
+   url: jdbc:mysql://localhost:3306/livedb
+   username: root
+   password: ''

@@ -1,0 +1,56 @@
+
+# customer information
+cust:
+  info:
+    address: madhuban
+    age: 23
+    name: manas
+    salary: 32000
+    
+#hospital information
+hospital:
+  age: 30
+  name: Apollo
+  
+#lab information
+lab:
+  bpPrice: 5000
+  echo2DPrice: 1300
+  rtpcrPrice: 1300
+  
+ #personal information
+  
+per:
+  info:
+  # simple properties
+   pid: 2003
+   pname: manas  
+   #array properties  
+   favColors:
+    - red
+    - green
+    - blue
+    #List collection
+   studies:
+    - 10+2-MPC
+    - B.tech-cse
+    - M.Tech-IT
+    #set collection
+   phoneNumbers:
+    - 8745122365
+    - 4512326589
+    - 8956231254
+    - 8545122356
+    #map collection
+   idDetails:
+      aadharNo: 5623325662303
+      panNo: ADGD454512
+      voterId: 54421232
+   #Has-a property
+   jobInfo:
+      company: Webskitters
+      deptNo: 2324
+      desg: software_developer
+    
+   
+   

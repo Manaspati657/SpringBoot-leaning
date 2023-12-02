@@ -1,0 +1,20 @@
+spring:
+  datasource:
+  
+ #creates the jdbc con pool having jdbc con objects for oracle s/w
+ 
+  #oracle connection properties
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@localhost:1521:xe
+#    username: system
+#    password: manager
+   
+   #mysql connection properties
+ 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:  jdbc:mysql://localhost:3306/myfirstdb
+    username: root
+    password: 
+
+
+    
